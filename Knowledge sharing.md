@@ -73,6 +73,7 @@ We have collected several common/hot issues and arranged in each open source lan
 - Java
 
      - - -
+
 - Python
     + **Q**: How to get started a web app in Python on Azure Web Apps.  
       **A**: Please refer to [Django and MySQL on Azure with Python Tools 2.2 for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/) for details.
