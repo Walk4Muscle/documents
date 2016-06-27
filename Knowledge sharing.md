@@ -5,6 +5,7 @@ We have collected several common/hot issues and arranged in each open source lan
 - PHP
    + **Q**: How to configure PHP in Azure App Service Web Apps?    
      **A**: Please refer to the offical guide, [Configure PHP in Azure App Service Web Apps](https://azure.microsoft.com/en-us/documentation/articles/web-sites-php-configure/).
+
       - - -
    + **Q**: How to enable connection to Azure SQL in PHP applications on Azure Web Apps?  
      **A**: Be default, the DLL libraries `php_sqlsrv` and `php_pdo_sqlsrv` have been installed in the PHP ext folder on Azure, but haven't been configured in PHP runtime. So we need to configure the extensions manually:
@@ -15,6 +16,7 @@ We have collected several common/hot issues and arranged in each open source lan
         extension=php_sqlsrv.dll
          ```
      3. Restart your application. Check the extension of `sqlsrv` and `pdo_sqlsrv` again.
+     
       - - -
     + **Q**: How to generate SAS token of Azure Blob Storage in PHP in version **2015-04-05**?  
       **A**: The code snippet:
