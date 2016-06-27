@@ -71,8 +71,8 @@ We have collected several common/hot issues and arranged in each open source lan
      - - -
 
 - Java
-
      - - -
+
 
 - Python
     + **Q**: How to get started a web app in Python on Azure Web Apps.  
@@ -93,6 +93,7 @@ We have collected several common/hot issues and arranged in each open source lan
      If you insist on perferring `BlobService`, you could install package `azure.storage 0.20.0`.
      
     - - -
+
 - Node.js
   + **Q**: How to build/deploy/configure a web app in Node.js on Azure Web Apps.  
     **A**: Please refer to [Get started with Node.js web apps in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/).  
