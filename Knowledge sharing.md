@@ -67,12 +67,15 @@ We have collected several common/hot issues and arranged in each open source lan
         }
         ```
         Refer to [Constructing a Service SAS](https://msdn.microsoft.com/en-us/library/azure/dn140255.aspx) for more.
+        
      - - -
 - Java
+- 
      - - -
 - Python
     + **Q**: How to get started a web app in Python on Azure Web Apps.  
       **A**: Please refer to [Django and MySQL on Azure with Python Tools 2.2 for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/) for details.
+
       - - -
     + **Q**: How to implement Azure IOT on Raspberry Pi.  
       **A**: We suggest that you can try to extend Python with Azure IoT SDK for C, please see: https://azure.microsoft.com/en-us/documentation/articles/iot-hub-device-sdk-c-intro/ and https://docs.python.org/2/extending/extending.html.
@@ -86,11 +89,13 @@ We have collected several common/hot issues and arranged in each open source lan
      + **Q**: AttributeError: ‘module’ object has no attribute ‘BlobService’.  
        **A**: As in the latest `azure.storage 0.30.0` , `BlobSrvice` is split into `BlockBlobService`, `AppendBlobService`, `PageBlobService` object, you could use `BlockBlobService` insteading of `BlobService`. There are many articles need to update the content.  
      If you insist on perferring `BlobService`, you could install package `azure.storage 0.20.0`.
+     
     - - -
 - Node.js
   + **Q**: How to build/deploy/configure a web app in Node.js on Azure Web Apps.  
     **A**: Please refer to [Get started with Node.js web apps in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/).  
     Additionally, Azure Web Apps uses IISNode to host the Node process inside of IIS. Your Node site is actually given a Named Pipe which receives the incoming requests, not a TCP port like you would use when running locally or hosting yourself. Even if you could open a TCP port, Azure Websites are really only meant for traditional websites and don't have a way to open ports to the outside world. 
+
     - - -
   + **Q**: How to use `tedious` to connection to Azure SQL.  
     **A**: Use following code snippet:  
@@ -109,4 +114,5 @@ We have collected several common/hot issues and arranged in each open source lan
         console.log("Connected");
     });
     ```
+    
     - - -
