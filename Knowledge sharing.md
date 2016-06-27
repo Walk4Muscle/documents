@@ -75,19 +75,19 @@ We have collected several common/hot issues and arranged in each open source lan
 
 
 - Python
-    + **Q**: How to get started a web app in Python on Azure Web Apps.  
+     + **Q**: How to get started a web app in Python on Azure Web Apps.  
       **A**: Please refer to [Django and MySQL on Azure with Python Tools 2.2 for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/) for details.
 
-      - - -
-    + **Q**: How to implement Azure IOT on Raspberry Pi.  
+       - - -
+     + **Q**: How to implement Azure IOT on Raspberry Pi.  
       **A**: We suggest that you can try to extend Python with Azure IoT SDK for C, please see: https://azure.microsoft.com/en-us/documentation/articles/iot-hub-device-sdk-c-intro/ and https://docs.python.org/2/extending/extending.html.
 
         The other choice is that using the Azure IoT SDK for NodeJS to create a server as proxy for listening Python push messages and forwarding to Azure IoTHub, please see https://github.com/Azure/azure-iot-sdks/tree/master/node/device. And according to the version of your Respberry Pi, you need to download the suitable nodejs runtime as below from the nodejs offical website https://nodejs.org/en/download/ or via using sudo apt-get install nodejs on the Raspbian OS.  
-      * Respberry Pi: ARMv6   
-      * Respberry Pi 2: ARMv7  
+       * Respberry Pi: ARMv6   
+       * Respberry Pi 2: ARMv7  
       
-      Otherwise, the simple way for sending messages from device to Azure IoTHub on Respberry PI is that using the Device Messaging REST APIs in Python.
-      - - -
+       Otherwise, the simple way for sending messages from device to Azure IoTHub on Respberry PI is that using the Device Messaging REST APIs in Python.
+        - - -
      + **Q**: AttributeError: ‘module’ object has no attribute ‘BlobService’.  
        **A**: As in the latest `azure.storage 0.30.0` , `BlobSrvice` is split into `BlockBlobService`, `AppendBlobService`, `PageBlobService` object, you could use `BlockBlobService` insteading of `BlobService`. There are many articles need to update the content.  
      If you insist on perferring `BlobService`, you could install package `azure.storage 0.20.0`.
