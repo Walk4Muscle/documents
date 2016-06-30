@@ -24,11 +24,21 @@ I am gald here, to introduce several resurces to help you for how to get started
 
 **If you are an open source language developer**  
 Please refer the specifical language develop centers for quick searching the *SDKs*, *tutorials* and *documents* of different Azure serives in your language.  
- - [PHP](https://azure.microsoft.com/en-us/develop/php/)
+ - [PHP](https://azure.microsoft.com/en-us/develop/php/)  
+    + You can fast [create, configure, and deploy a PHP web app to Azure](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-php-get-started/) with a ease.
+    + You also can quickly [build a WordPress site with the existing template from Azure Marketplace](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-create-web-app-from-marketplace/).
  - [Java](https://azure.microsoft.com/en-us/develop/java/)
+    + [Create a Java web app in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-get-started/)
+    + [Upload a custom Java web app to Azure](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-custom-upload/)
  - [Python](https://azure.microsoft.com/en-us/develop/python/)
+    + [Creating web apps with Django](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-create-deploy-django-app/)
+    + [Django Hello World web application on a Linux VM](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-python-django-web-app/#creating-and-configuring-an-azure-virtual-machine-to-host-django)
  - [Node.js](https://azure.microsoft.com/en-us/develop/nodejs/)
- - [Ruby](https://azure.microsoft.com/en-us/develop/python/)  
+    + Quickly build an [Expressjs web app on Azure](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/)
+    + [Create a Node.js chat application with Socket.IO in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-chat-app-socketio/)
+ - [Ruby](https://azure.microsoft.com/en-us/develop/ruby/)  
+    + [How to use Service Bus queues in Ruby](https://azure.microsoft.com/en-us/documentation/articles/service-bus-ruby-how-to-use-queues/)
+    + [Ruby on Rails Web application on an Azure Linux VM](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-ruby-rails-web-app/)
 
 Meanwhile, the documents, SDKs, and code samples are all open source. Pull, push, and commit to contribute on [GitHub](https://github.com/Azure).
 
