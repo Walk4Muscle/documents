@@ -165,6 +165,7 @@ We have collected top 3 common/hot issues and arranged in each open source langu
      - - -
      + **Q**: How to get started with Event Hubs using Java.  
        **A**: We can get started with Event Hubs by following the three steps below.
+       
        1. Create an Event Hub via Azure classic portal.
        2. Send messages to Event Hubs with `EventHubClient`.
        3. Receive messages from Event Hubs with `EventProcessorHost`.
