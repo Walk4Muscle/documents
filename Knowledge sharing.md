@@ -199,7 +199,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
        * Respberry Pi: ARMv6   
        * Respberry Pi 2: ARMv7  
       
-       Otherwise, the simple way for sending messages from device to Azure IoTHub on Respberry PI is that using the Device Messaging REST APIs in Python.
+       Additionally, the simple way for sending messages from device to Azure IoTHub on Respberry PI is that using the Device Messaging REST APIs in Python.
         - - -
      + **Q**: AttributeError: `module` object has no attribute `BlobService`.  
        **A**: As in the latest `azure.storage 0.30.0` , `BlobSrvice` is split into `BlockBlobService`, `AppendBlobService`, `PageBlobService` object, you could use `BlockBlobService` insteading of `BlobService`. There are many articles need to update the content.  
