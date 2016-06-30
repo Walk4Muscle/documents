@@ -179,7 +179,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         </dependency>
        ```
        
-       As reference, please see the offical tutorial at https://azure.microsoft.com/en-us/documentation/articles/event-hubs-java-ephjava-getstarted/.
+       As a reference, please see the offical tutorial at https://azure.microsoft.com/en-us/documentation/articles/event-hubs-java-ephjava-getstarted/.
      - - -
      
 
