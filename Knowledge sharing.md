@@ -79,7 +79,10 @@ We have collected top 3 common/hot issues and arranged in each open source langu
 
 - Python
      + **Q**: How to get started a web app in Python on Azure Web Apps.  
-      **A**: Please refer to [Django and MySQL on Azure with Python Tools 2.2 for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/) for details.
+      **A**: Generally, you can use [Python Tools for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/PTVS) to create a simple polls web app using one of the PTVS sample templates.  
+            Then build a MySQL service hosted on Azure, and configure the web app to this MySQL.  
+            Then publish the web app to [Azure App Service Web Apps](http://go.microsoft.com/fwlink/?LinkId=529714) via Visual Studio.  
+            Please refer to [Django and MySQL on Azure with Python Tools 2.2 for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/) for details.
 
        - - -
      + **Q**: How to implement Azure IOT on Raspberry Pi.  
