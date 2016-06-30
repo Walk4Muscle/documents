@@ -1,6 +1,6 @@
-We have collected top 3 common/hot issues and arranged in each open source language. We hope these issues will quickly slove or give you quick hits about your facing issues.
+We have collected top 3 common/hot issues for each OSS Dev language that using Azure. The FAQ list has covered 5 OSS dev languages, i.e. Java, Python, Ruby, PHP, Node.js on Azure. Hope this collection could quickly solve or give you some quick hits about the how to resolve issues. 
 
-- PHP
+- ## PHP ##
    + **Q**: What PHP configurations we can modify in Azure App Service Web Apps?    
      **A**: We can change the built-in PHP version from 5.4(default), 5.5, 5.6, and 7.0(preview).  
             We can change the built-in PHP_INI_USER, PHP_INI_PERDIR, PHP_INI_ALL and, PHP_INI_SYSTEM configurations.  
