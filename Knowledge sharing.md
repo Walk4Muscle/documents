@@ -244,15 +244,32 @@ We have collected top 3 common/hot issues and arranged in each open source langu
   - - -
     
 - Rudy 
-     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
-       **A**:
+     + **Q**: How to deploy Ruby on Rails on Azure.  
+       **A**: The recommendation way is to deploy into Azure VM. As references, there are three resources below which you can refer to.
        
-     - - -
-     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
-       **A**:
+        * https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-ruby-rails-web-app/
+        * http://channel9.msdn.com/Events/MIX/MIX10/SVC03 [video]
+             
+        For Azure Web Apps, not yet if you are using MRI/Ruby. 
+        However, you can install JRuby extensions below for Azure Web Apps, then deploy the rails with JRuby on Azure websites.
+        
+        * https://github.com/shibayan/JRubyExtension
+        * https://github.com/ipepe/JRubyExtension
         
      - - -
-     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
-       **A**:
+     + **Q**: How to use Blob storage from Ruby.  
+       **A**: Installing the Azure SDK for Ruby via command `gem install azure`, then doing like Python via require `azure` package in the Ruby script. More details, please refer to the offical tutorial https://azure.microsoft.com/en-us/documentation/articles/storage-ruby-how-to-use-blob-storage/.
+        
+     - - -
+     + **Q**: How to connect to Azure SQL Database by using Ruby.  
+       **A**: It's similar with connection in Python which need to following three steps for Ruby, please see below.
+       
+       Step 1. [Configure development environment for Ruby development](https://msdn.microsoft.com/library/mt711041.aspx)
+       
+       Step 2. [Create a SQL database for Ruby development](https://msdn.microsoft.com/en-us/library/mt705561(v=sql.1).aspx)
+       
+       Step 3. [Proof of concept connecting to SQL using Ruby](https://msdn.microsoft.com/en-us/library/mt715797(v=sql.1).aspx)
+       
+       There is an offical article which describe the overview at https://azure.microsoft.com/en-us/documentation/articles/sql-database-develop-ruby-simple/.
         
      - - -
