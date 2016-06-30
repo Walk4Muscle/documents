@@ -164,7 +164,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         
      - - -
      + **Q**: How to get started with Event Hubs using Java.  
-       **A**: We can get started with Event Hubs by following the three steps below.
+       **A**: We can get started with Event Hubs by following three steps below.
        
        1. Create an Event Hub via Azure classic portal.
        2. Send messages to Event Hubs with `EventHubClient`.
