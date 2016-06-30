@@ -25,7 +25,7 @@ Microsoft's commitment to openness and collaboration is ingrained in our day-to-
 To get started with using open source languages or open source softwares on Azure, below useful resources for your reference. 
 
 **If you are an open source language developer**  
-Please refer to the specified language developer centers for a quick searching about the SDKs, tutorials and documents of Azure.
+Please refer to the specified language developer centers for a quick searching about the *SDKs*, *tutorials* and *documents* of Azure.
 
  - [PHP](https://azure.microsoft.com/en-us/develop/php/)  
     + You can [create, configure, and deploy a PHP web app to Azure](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-php-get-started/).
