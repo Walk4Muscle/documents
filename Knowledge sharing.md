@@ -73,7 +73,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         
      - - -
 
-- Java
+- ## Java
       + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
         **A**: The details of authentication for the Azure Storage Services shows at https://msdn.microsoft.com/en-us/library/azure/dd179428.aspx, please see the code snippet using Java below.
         ```Java
@@ -184,7 +184,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
      
 
 
-- Python
+- ## Python
      + **Q**: How to get started a web app in Python on Azure Web Apps.  
       **A**: Generally, you can use [Python Tools for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-ptvs-django-mysql/PTVS) to create a simple polls web app using one of the PTVS sample templates.  
             Then build a MySQL service hosted on Azure, and configure the web app to this MySQL.  
@@ -207,7 +207,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
      
     - - -
 
-- Node.js
+- ## Node.js
      + **Q**: How to build/deploy/configure a web app in Node.js on Azure Web Apps.  
        **A**: Please refer to [Get started with Node.js web apps in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/).  
         Additionally, Azure Web Apps uses IISNode to host the Node process inside of IIS. Your Node site is actually given a Named Pipe which receives the incoming requests, not a TCP port like you would use when running locally or hosting yourself. Even if you could open a TCP port, Azure Websites are really only meant for traditional websites and don't have a way to open ports to the outside world. 
@@ -247,7 +247,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
      
   - - -
     
-- Rudy 
+- ## Rudy 
      + **Q**: How to deploy Ruby on Rails on Azure.  
        **A**: The recommendation way is to deploy into Azure VM. As references, there are three resources below which you can refer to.
        
