@@ -264,12 +264,12 @@ We have collected top 3 common/hot issues and arranged in each open source langu
      + **Q**: How to connect to Azure SQL Database by using Ruby.  
        **A**: It's similar with connection in Python which need to following three steps for Ruby, please see below.
        
-       Step 1. [Configure development environment for Ruby development](https://msdn.microsoft.com/library/mt711041.aspx)
-       
-       Step 2. [Create a SQL database for Ruby development](https://msdn.microsoft.com/en-us/library/mt705561(v=sql.1).aspx)
-       
-       Step 3. [Proof of concept connecting to SQL using Ruby](https://msdn.microsoft.com/en-us/library/mt715797(v=sql.1).aspx)
-       
-       There is an offical article which describe the overview at https://azure.microsoft.com/en-us/documentation/articles/sql-database-develop-ruby-simple/.
+          Step 1. [Configure development environment for Ruby development](https://msdn.microsoft.com/library/mt711041.aspx)
+          
+          Step 2. [Create a SQL database for Ruby development](https://msdn.microsoft.com/en-us/library/mt705561(v=sql.1).aspx)
+          
+          Step 3. [Proof of concept connecting to SQL using Ruby](https://msdn.microsoft.com/en-us/library/mt715797(v=sql.1).aspx)
+          
+          There is an offical article which describe the overview at https://azure.microsoft.com/en-us/documentation/articles/sql-database-develop-ruby-simple/.
         
      - - -
