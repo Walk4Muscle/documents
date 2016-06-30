@@ -19,14 +19,17 @@ in global marketing campaign
  - ![NBC](//azurecomcdn.azureedge.net/cvt-8bdd37cf798b9199c9562aa1462403d53985852cc645b6e2303e69933d92b7d2/images/shared/customers/nbc-sports_m.png) NBC News Picks Windows Azure over Amazon to Host Push Notifications to Mobile Apps
 
 We create SDKs that connect to Azure services through REST wrappers and interfaces in the languages of your choice including .NET, Java, Node.js, Python, Golang, Ruby and others.  
+
 Microsoftb's commitment to openness and collaboration is ingrained in our day-to-day approach to doing business with partners around the world.This commitment influences how web are helping customers transition to the cloud and make the most of IT trends that can boost flexibility, drive efficiency, and improve analytics.  
-I am gald here, to introduce several resurces to help you for how to get started with the open source languages or the open source softwares on Azure.
+
+To get started with using open source languages or open source softwares on Azure, below useful resources for your reference. 
 
 **If you are an open source language developer**  
-Please refer the specifical language develop centers for quick searching the *SDKs*, *tutorials* and *documents* of different Azure serives in your language.  
+Please refer to the specified language developer centers for a quick searching about the SDKs, tutorials and documents of Azure.
+
  - [PHP](https://azure.microsoft.com/en-us/develop/php/)  
-    + You can fast [create, configure, and deploy a PHP web app to Azure](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-php-get-started/) with a ease.
-    + You also can quickly [build a WordPress site with the existing template from Azure Marketplace](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-create-web-app-from-marketplace/).
+    + You can [create, configure, and deploy a PHP web app to Azure](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-php-get-started/).
+    + You can also quickly [build a WordPress site with the existing template from Azure Marketplace](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-create-web-app-from-marketplace/).
  - [Java](https://azure.microsoft.com/en-us/develop/java/)
     + [Create a Java web app in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-get-started/)
     + [Upload a custom Java web app to Azure](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-custom-upload/)
@@ -37,8 +40,8 @@ Please refer the specifical language develop centers for quick searching the *SD
     + Quickly build an [Expressjs web app on Azure](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/)
     + [Create a Node.js chat application with Socket.IO in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-chat-app-socketio/)
  - [Ruby](https://azure.microsoft.com/en-us/develop/ruby/)  
-    + [How to use Service Bus queues in Ruby](https://azure.microsoft.com/en-us/documentation/articles/service-bus-ruby-how-to-use-queues/)
-    + [Ruby on Rails Web application on an Azure Linux VM](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-ruby-rails-web-app/)
+    + [Leverage Azure Service Bus queues in a Ruby application ](https://azure.microsoft.com/en-us/documentation/articles/service-bus-ruby-how-to-use-queues/)
+    + [Deploy a Rails Web application on an Azure Linux VM ](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-ruby-rails-web-app/)
 
 Meanwhile, the documents, SDKs, and code samples are all open source. Pull, push, and commit to contribute on [GitHub](https://github.com/Azure).
 
