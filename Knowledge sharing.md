@@ -1,10 +1,13 @@
-Hi, cloud develpers!
-
-We have collected several common/hot issues and arranged in each open source language. We hope these issues will quickly slove or give you quick hits about your facing issues.
+We have collected top 3 common/hot issues and arranged in each open source language. We hope these issues will quickly slove or give you quick hits about your facing issues.
 
 - PHP
-   + **Q**: How to configure PHP in Azure App Service Web Apps?    
-     **A**: Please refer to the offical guide, [Configure PHP in Azure App Service Web Apps](https://azure.microsoft.com/en-us/documentation/articles/web-sites-php-configure/).
+   + **Q**: What PHP configurations we can modify in Azure App Service Web Apps?    
+     **A**: We can change the built-in PHP version from 5.4(default), 5.5, 5.6, and 7.0(preview).  
+            We can change the built-in PHP_INI_USER, PHP_INI_PERDIR, PHP_INI_ALL and, PHP_INI_SYSTEM configurations.  
+            We can enable extensions in the default PHP runtime.  
+            We can even use a custom PHP runtime.  
+            We also can enable Composer automation in Azure for manage your PHP packages.  
+            Please refer to the offical guide, [Configure PHP in Azure App Service Web Apps](https://azure.microsoft.com/en-us/documentation/articles/web-sites-php-configure/).
 
       - - -
    + **Q**: How to enable connection to Azure SQL in PHP applications on Azure Web Apps?  
@@ -88,7 +91,7 @@ We have collected several common/hot issues and arranged in each open source lan
       
        Otherwise, the simple way for sending messages from device to Azure IoTHub on Respberry PI is that using the Device Messaging REST APIs in Python.
         - - -
-     + **Q**: AttributeError: ‘module’ object has no attribute ‘BlobService’.  
+     + **Q**: AttributeError: `module` object has no attribute `BlobService`.  
        **A**: As in the latest `azure.storage 0.30.0` , `BlobSrvice` is split into `BlockBlobService`, `AppendBlobService`, `PageBlobService` object, you could use `BlockBlobService` insteading of `BlobService`. There are many articles need to update the content.  
      If you insist on perferring `BlobService`, you could install package `azure.storage 0.20.0`.
      
