@@ -10,7 +10,7 @@ We have collected top 3 common/hot issues and arranged in each open source langu
             Please refer to the offical guide, [Configure PHP in Azure App Service Web Apps](https://azure.microsoft.com/en-us/documentation/articles/web-sites-php-configure/).
 
       - - -
-   + **Q**: How to enable connection to Azure SQL in PHP applications on Azure Web Apps?  
+   + **Q**: How to enable connection to Azure SQL Database in PHP applications on Azure Web Apps?  
      **A**: Be default, the DLL libraries `php_sqlsrv` and `php_pdo_sqlsrv` have been installed in the PHP ext folder on Azure, but haven't been configured in PHP runtime. So we need to configure the extensions manually:
      1. Create a file named `.user.ini` at the root directory of your application on Azure.
      2. Write the following content in `.user.ini`:
