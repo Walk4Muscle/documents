@@ -73,8 +73,8 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         
      - - -
 
-- ## Java
-      +  **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+- ## Java  
+     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
         **A**: The details of authentication for the Azure Storage Services shows at https://msdn.microsoft.com/en-us/library/azure/dd179428.aspx, please see the code snippet using Java below.
         ```Java
         private static Base64 base64 = new Base64();  
@@ -102,7 +102,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         String authorizationHeader = createAuthorizationHeader(stringToSign);  
         ```
         
-     - - -
+       - - -
      + **Q**: How to authenticate with ARM & ASM using Azure SDK for Java.  
        **A**: Please see the codes below.
        
@@ -162,7 +162,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         );
        ```
         
-     - - -
+       - - -
      + **Q**: How to get started with Event Hubs using Java.  
        **A**: We can get started with Event Hubs by following three steps below.
        
@@ -212,7 +212,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
        **A**: Please refer to [Get started with Node.js web apps in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/).  
         Additionally, Azure Web Apps uses IISNode to host the Node process inside of IIS. Your Node site is actually given a Named Pipe which receives the incoming requests, not a TCP port like you would use when running locally or hosting yourself. Even if you could open a TCP port, Azure Websites are really only meant for traditional websites and don't have a way to open ports to the outside world. 
 
-     - - -
+       - - -
      + **Q**: How to use `tedious` to connect to Azure SQL.  
        **A**: Use following code snippet:  
         ```javascript
@@ -231,7 +231,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         });
         ```  
     
-     - - -
+       - - -
      + **Q**: Azure webapp node.js app not starting  
        **A**: Azure WebApp for node.js is running via iisnode as a native IIS module that allows hosting in IIS on Windows. Please see the document https://blogs.msdn.microsoft.com/silverlining/2012/06/14/windows-azure-websites-node-js/ to know its features.  
         
@@ -260,11 +260,11 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         * https://github.com/shibayan/JRubyExtension
         * https://github.com/ipepe/JRubyExtension
         
-     - - -
+       - - -
      + **Q**: How to use Blob storage from Ruby.  
        **A**: Installing the Azure SDK for Ruby via command `gem install azure`, then doing like Python via require `azure` package in the Ruby script. More details, please refer to the offical tutorial https://azure.microsoft.com/en-us/documentation/articles/storage-ruby-how-to-use-blob-storage/.
         
-     - - -
+       - - -
      + **Q**: How to connect to Azure SQL Database by using Ruby.  
        **A**: It's similar with connection in Python which need to following three steps for Ruby, please see below.
        
