@@ -235,7 +235,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
      + **Q**: Azure webapp node.js app not starting  
        **A**: Azure WebApp for node.js is running via iisnode as a native IIS module that allows hosting in IIS on Windows. Please see the document https://blogs.msdn.microsoft.com/silverlining/2012/06/14/windows-azure-websites-node-js/ to know its features.  
         
-        For debugging the webapp for node.js, I suggest you can refer to the document to know how to do it.  
+        For debugging the webapp for node.js, I suggest that you can refer to the document to know how to do it.  
         
         If you are using Visual Studio as the IDE for node.js, I recommend installing [NTVS](https://github.com/Microsoft/nodejstools) in VS for debugging and deploying the node.js. Please see the documents below to know how to get started.  
         [Installation for NTVS](https://github.com/Microsoft/nodejstools/wiki/Installation)  
