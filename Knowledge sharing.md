@@ -69,7 +69,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
             return $_url;
         }
         ```
-        Refer to [Constructing a Service SAS](https://msdn.microsoft.com/en-us/library/azure/dn140255.aspx) for more.
+        Refer to [Constructing a Service SAS](https://msdn.microsoft.com/en-us/library/azure/dn140255.aspx) for more details.
         
      - - -
 
