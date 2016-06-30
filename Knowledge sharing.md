@@ -74,34 +74,113 @@ We have collected top 3 common/hot issues and arranged in each open source langu
      - - -
 
 - Java
-    + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
-      **A**: The details of authentication for the Azure Storage Services shows at https://msdn.microsoft.com/en-us/library/azure/dd179428.aspx, please see the code snippet using Java below.
-      ```Java
-      private static Base64 base64 = new Base64();  
-      private String createAuthorizationHeader(String canonicalizedString)     {  
-          Mac mac = Mac.getInstance("HmacSHA256");  
-          mac.init(new SecretKeySpec(base64.decode(key), "HmacSHA256"));  
-          String authKey = new String(base64.encode(mac.doFinal(canonicalizedString.getBytes("UTF-8"))));  
-          String authStr = "SharedKey " + account + ":" + authKey;  
-          return authStr;  
-      }  
-      
-      String urlPath = containerName+"/"+ blobName;  
-      String storageServiceVersion = "2009-09-19";  
+      + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+        **A**: The details of authentication for the Azure Storage Services shows at https://msdn.microsoft.com/en-us/library/azure/dd179428.aspx, please see the code snippet using Java below.
+        ```Java
+        private static Base64 base64 = new Base64();  
+        private String createAuthorizationHeader(String canonicalizedString)     {  
+            Mac mac = Mac.getInstance("HmacSHA256");  
+            mac.init(new SecretKeySpec(base64.decode(key), "HmacSHA256"));  
+            String authKey = new String(base64.encode(mac.doFinal(canonicalizedString.getBytes("UTF-8"))));  
+            String authStr = "SharedKey " + account + ":" + authKey;  
+            return authStr;  
+        }  
+        
+        String urlPath = containerName+"/"+ blobName;  
+        String storageServiceVersion = "2009-09-19";  
 
-      SimpleDateFormat fmt = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss");  
-      fmt.setTimeZone(TimeZone.getTimeZone("GMT"));  
-      String date = fmt.format(Calendar.getInstance().getTime()) + " GMT";  
-      String blobType = "BlockBlob"; //This is important as there are two types of blob, Page blob and Block blob  
+        SimpleDateFormat fmt = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss");  
+        fmt.setTimeZone(TimeZone.getTimeZone("GMT"));  
+        String date = fmt.format(Calendar.getInstance().getTime()) + " GMT";  
+        String blobType = "BlockBlob"; //This is important as there are two types of blob, Page blob and Block blob  
 
-      String canonicalizedHeaders = "x-ms-blob-type:"+blobType+"\nx-ms-date:"+date+"\nx-ms-version:"+storageServiceVersion;  
-      String canonicalizedResource = "/"+account+"/"+urlPath;  
+        String canonicalizedHeaders = "x-ms-blob-type:"+blobType+"\nx-ms-date:"+date+"\nx-ms-version:"+storageServiceVersion;  
+        String canonicalizedResource = "/"+account+"/"+urlPath;  
 
-      //This will change based on the Authentication scheme you are using. This is for SharedKey, you need to change it if you are using SharedKeyLite
-      String stringToSign = requestMethod+"\n\n\n"+blobLength+"\n\n\n\n\n\n\n\n\n"+canonicalizedHeaders+"\n"+canonicalizedResource; 
-      String authorizationHeader = createAuthorizationHeader(stringToSign);  
-      ```
+        //This will change based on the Authentication scheme you are using. This is for SharedKey, you need to change it if you are using SharedKeyLite
+        String stringToSign = requestMethod+"\n\n\n"+blobLength+"\n\n\n\n\n\n\n\n\n"+canonicalizedHeaders+"\n"+canonicalizedResource; 
+        String authorizationHeader = createAuthorizationHeader(stringToSign);  
+        ```
+        
      - - -
+     + **Q**: How to authenticate with ARM & ASM using Azure SDK for Java.  
+       **A**: Please see the codes below.
+       
+       Code 1. Authentication with ARM
+       ```Java
+        // The parameters include clientId, clientSecret, tenantId, subscriptionId and resourceGroupName.
+        private static final String clientId = "<client-id>";
+        private static final String clientSecret = "<key>";
+        private static final String tenantId = "<tenant-id>";
+        private static final String subscriptionId = "<subscription-id>";
+        private static final String resouceGroupName = "<resource-group-name>";
+
+        // The function for getting the access token via Class AuthenticationResult
+        private static AuthenticationResult getAccessTokenFromServicePrincipalCredentials()
+                throws ServiceUnavailableException, MalformedURLException, ExecutionException, InterruptedException {
+            AuthenticationContext context;
+            AuthenticationResult result = null;
+            ExecutorService service = null;
+            try {
+                service = Executors.newFixedThreadPool(1);
+                // TODO: add your tenant id
+                context = new AuthenticationContext("https://login.windows.net/" + tenantId, false, service);
+                // TODO: add your client id and client secret
+                ClientCredential cred = new ClientCredential(clientId, clientSecret);
+                Future<AuthenticationResult> future = context.acquireToken("https://management.azure.com/", cred, null);
+                result = future.get();
+            } finally {
+                service.shutdown();
+            }
+
+            if (result == null) {
+                throw new ServiceUnavailableException("authentication result was null");
+            }
+            return result;
+        }
+
+        // The process for getting the list of VMs in a resource group
+        Configuration config = ManagementConfiguration.configure(null, 
+            new URI("https://management.core.windows.net"),
+            subscriptionId,
+            getAccessTokenFromServicePrincipalCredentials().getAccessToken());
+       ```
+        
+       Code2. Authentication with ASM
+       ```Java
+        static String uri = "https://management.core.windows.net/";
+        static String subscriptionId = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+        static String keyStoreLocation = "<cert-file>.jks";
+        static String keyStorePassword = "my-cert-password";
+
+        Configuration config = ManagementConfiguration.configure(
+            new URI(uri), 
+            subscriptionId,
+            keyStoreLocation, // the file path to the JKS
+            keyStorePassword, // the password for the JKS
+            KeyStoreType.jks // flags that I'm using a JKS keystore
+        );
+       ```
+        
+     - - -
+     + **Q**: How to get started with Event Hubs using Java.  
+       **A**: We can get started with Event Hubs by following the three steps below.
+       1. Create an Event Hub via Azure classic portal.
+       2. Send messages to Event Hubs with `EventHubClient`.
+       3. Receive messages from Event Hubs with `EventProcessorHost`.
+       
+       The classes above `EventHubClient` & `EventProcessorHost` are in the Azure SDK for Java, you can configure the `pom.xml` file of your Maven project to reference them.
+       ```XML
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-eventhubs</artifactId>
+            <version>0.7.2</version>
+        </dependency>
+       ```
+       
+       As reference, please see the offical tutorial at https://azure.microsoft.com/en-us/documentation/articles/event-hubs-java-ephjava-getstarted/.
+     - - -
+     
 
 
 - Python
@@ -164,3 +243,15 @@ We have collected top 3 common/hot issues and arranged in each open source langu
   - - -
     
 - Rudy 
+     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+       **A**:
+       
+     - - -
+     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+       **A**:
+        
+     - - -
+     + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+       **A**:
+        
+     - - -
