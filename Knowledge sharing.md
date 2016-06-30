@@ -74,6 +74,33 @@ We have collected top 3 common/hot issues and arranged in each open source langu
      - - -
 
 - Java
+    + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+      **A**: The details of authentication for the Azure Storage Services shows at https://msdn.microsoft.com/en-us/library/azure/dd179428.aspx, please see the code snippet using Java below.
+      ```
+      private static Base64 base64 = new Base64();  
+      private String createAuthorizationHeader(String canonicalizedString)     {  
+          Mac mac = Mac.getInstance("HmacSHA256");  
+          mac.init(new SecretKeySpec(base64.decode(key), "HmacSHA256"));  
+          String authKey = new String(base64.encode(mac.doFinal(canonicalizedString.getBytes("UTF-8"))));  
+          String authStr = "SharedKey " + account + ":" + authKey;  
+          return authStr;  
+      }  
+      
+      String urlPath = containerName+"/"+ blobName;  
+      String storageServiceVersion = "2009-09-19";  
+
+      SimpleDateFormat fmt = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss");  
+      fmt.setTimeZone(TimeZone.getTimeZone("GMT"));  
+      String date = fmt.format(Calendar.getInstance().getTime()) + " GMT";  
+      String blobType = "BlockBlob"; //This is important as there are two types of blob, Page blob and Block blob  
+
+      String canonicalizedHeaders = "x-ms-blob-type:"+blobType+"\nx-ms-date:"+date+"\nx-ms-version:"+storageServiceVersion;  
+      String canonicalizedResource = "/"+account+"/"+urlPath;  
+
+      //This will change based on the Authentication scheme you are using. This is for SharedKey, you need to change it if you are using SharedKeyLite
+      String stringToSign = requestMethod+"\n\n\n"+blobLength+"\n\n\n\n\n\n\n\n\n"+canonicalizedHeaders+"\n"+canonicalizedResource; 
+      String authorizationHeader = createAuthorizationHeader(stringToSign);  
+      ```
      - - -
 
 
