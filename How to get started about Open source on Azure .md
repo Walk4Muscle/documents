@@ -20,7 +20,7 @@ in global marketing campaign
 
 We create SDKs that connect to Azure services through REST wrappers and interfaces in the languages of your choice including .NET, Java, Node.js, Python, Golang, Ruby and others.  
 
-Microsoftb's commitment to openness and collaboration is ingrained in our day-to-day approach to doing business with partners around the world.This commitment influences how web are helping customers transition to the cloud and make the most of IT trends that can boost flexibility, drive efficiency, and improve analytics.  
+Microsoft's commitment to openness and collaboration is ingrained in our day-to-day approach to doing business with partners around the world.This commitment influences how web are helping customers transition to the cloud and make the most of IT trends that can boost flexibility, drive efficiency, and improve analytics.  
 
 To get started with using open source languages or open source softwares on Azure, below useful resources for your reference. 
 
