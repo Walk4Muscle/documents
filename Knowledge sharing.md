@@ -213,7 +213,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
         Additionally, Azure Web Apps uses IISNode to host the Node process inside of IIS. Your Node site is actually given a Named Pipe which receives the incoming requests, not a TCP port like you would use when running locally or hosting yourself. Even if you could open a TCP port, Azure Websites are really only meant for traditional websites and don't have a way to open ports to the outside world. 
 
      - - -
-     + **Q**: How to use `tedious` to connection to Azure SQL.  
+     + **Q**: How to use `tedious` to connect to Azure SQL.  
        **A**: Use following code snippet:  
         ```javascript
         var Connection = require('tedious').Connection;
