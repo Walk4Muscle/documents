@@ -249,7 +249,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
     
 - ## Rudy 
      + **Q**: How to deploy Ruby on Rails on Azure.  
-       **A**: The recommendation way is to deploy into Azure VM. As references, there are three resources below which you can refer to.
+       **A**: The recommendation way is to deploy into Azure VM. As references, there are two resources below which you can refer to.
        
         * https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-ruby-rails-web-app/
         * http://channel9.msdn.com/Events/MIX/MIX10/SVC03 [video]
