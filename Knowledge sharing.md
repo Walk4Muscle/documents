@@ -74,7 +74,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
      - - -
 
 - ## Java
-      + **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
+      +  **Q**: How to generate the authorization header for using REST APIs of Azure Blob Storage.  
         **A**: The details of authentication for the Azure Storage Services shows at https://msdn.microsoft.com/en-us/library/azure/dd179428.aspx, please see the code snippet using Java below.
         ```Java
         private static Base64 base64 = new Base64();  
