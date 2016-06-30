@@ -7,7 +7,7 @@ We have collected top 3 common/hot issues for each OSS Dev language that using A
             We can enable extensions in the default PHP runtime.  
             We can even use a custom PHP runtime.  
             We also can enable Composer automation in Azure for manage your PHP packages.  
-            Please refer to the offical guide, [Configure PHP in Azure App Service Web Apps](https://azure.microsoft.com/en-us/documentation/articles/web-sites-php-configure/).
+            For more details, please refer to the offical guide, [Configure PHP in Azure App Service Web Apps](https://azure.microsoft.com/en-us/documentation/articles/web-sites-php-configure/).
 
       - - -
    + **Q**: How to enable connection to Azure SQL Database in PHP applications on Azure Web Apps?  
