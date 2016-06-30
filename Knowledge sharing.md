@@ -212,7 +212,7 @@ We have collected top 3 common/hot issues and arranged in each open source langu
        **A**: Please refer to [Get started with Node.js web apps in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/).  
         Additionally, Azure Web Apps uses IISNode to host the Node process inside of IIS. Your Node site is actually given a Named Pipe which receives the incoming requests, not a TCP port like you would use when running locally or hosting yourself. Even if you could open a TCP port, Azure Websites are really only meant for traditional websites and don't have a way to open ports to the outside world. 
 
-    - - -
+     - - -
      + **Q**: How to use `tedious` to connection to Azure SQL.  
        **A**: Use following code snippet:  
         ```javascript
@@ -231,7 +231,7 @@ We have collected top 3 common/hot issues and arranged in each open source langu
         });
         ```  
     
-    - - -
+     - - -
      + **Q**: Azure webapp node.js app not starting  
        **A**: Azure WebApp for node.js is running via iisnode as a native IIS module that allows hosting in IIS on Windows. Please see the document https://blogs.msdn.microsoft.com/silverlining/2012/06/14/windows-azure-websites-node-js/ to know its features.  
         
